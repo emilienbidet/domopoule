@@ -1,196 +1,327 @@
-//Gestion Navigation Bouton HAUT ///////////////////
-void NavBthaut() {
-  if (Menu > 0) {
-    if (Menu == 3) {
+// Gestion Navigation Bouton HAUT ///////////////////
+void NavBthaut()
+{
+  if (Menu > 0)
+  {
+    if (Menu == 3)
+    {
       Menu = 8;
-    } else {
+    }
+    else
+    {
       Menu--;
     }
   }
-  if (MenuMdm > 0) {
-    if (MenuMdm == 3) {
+  if (MenuMdm > 0)
+  {
+    if (MenuMdm == 3)
+    {
       MenuMdm = 5;
-    } else {
+    }
+    else
+    {
       MenuMdm--;
     }
   }
-  if (MenuMdmOuv > 0) {
-    if (MenuMdmOuv == 3) {
+  if (MenuMdmOuv > 0)
+  {
+    if (MenuMdmOuv == 3)
+    {
       MenuMdmOuv = 8;
-    } else {
+    }
+    else
+    {
       MenuMdmOuv--;
     }
   }
-  if (MenuMdmFerm > 0) {
-    if (MenuMdmFerm == 3) {
+  if (MenuMdmFerm > 0)
+  {
+    if (MenuMdmFerm == 3)
+    {
       MenuMdmFerm = 8;
-    } else {
+    }
+    else
+    {
       MenuMdmFerm--;
     }
   }
-  if (MenuPara > 0) {
-    if (MenuPara == 3) {
+  if (MenuPara > 0)
+  {
+    if (MenuPara == 3)
+    {
       MenuPara = 8;
-    } else {
+    }
+    else
+    {
       MenuPara--;
     }
   }
 
-  if (MenuParaProg > 0) {
-    if (MenuParaProg == 3) {
+  if (MenuParaProg > 0)
+  {
+    if (MenuParaProg == 3)
+    {
       MenuParaProg = 5;
-    } else {
+    }
+    else
+    {
       MenuParaProg--;
     }
   }
-  if (MenuParaLDR > 0) {
-    if (MenuParaLDR == 3) {
+  if (MenuParaLDR > 0)
+  {
+    if (MenuParaLDR == 3)
+    {
       MenuParaLDR = 8;
-    } else {
+    }
+    else
+    {
       MenuParaLDR--;
     }
   }
-  if (MenuSyst > 0) {
-    if (MenuSyst == 3) {
+  if (MenuSyst > 0)
+  {
+    if (MenuSyst == 3)
+    {
       MenuSyst = 5;
-    } else {
+    }
+    else
+    {
       MenuSyst--;
     }
   }
-  if (MenuSystVeille > 0) {
-    if (MenuSystVeille == 3) {
+  if (MenuSystVeille > 0)
+  {
+    if (MenuSystVeille == 3)
+    {
       MenuSystVeille = 5;
-    } else {
+    }
+    else
+    {
       MenuSystVeille--;
     }
   }
-  if (MenuParaSecu > 0) {
-    if (MenuParaSecu == 3) {
+  if (MenuParaSecu > 0)
+  {
+    if (MenuParaSecu == 3)
+    {
       MenuParaSecu = 5;
-    } else {
+    }
+    else
+    {
       MenuParaSecu--;
     }
   }
-  if (SystVeilleetat == 3) {
+  if (SystVeilleetat == 3)
+  {
     Etatveille = !Etatveille;
   }
-  if (SystVeilleTpsactiv == 3) {
-    if (V_TpsAvveille > 179) {
+  if (SystVeilleTpsactiv == 3)
+  {
+    if (V_TpsAvveille > 179)
+    {
       V_TpsAvveille = 3;
-    } else {
+    }
+    else
+    {
       V_TpsAvveille++;
     }
   }
-  if (ParaSecumoteurTpsactiv == 3) {
-    if (V_TpsSecuMoteur > 29) {
+  if (ParaSecumoteurTpsactiv == 3)
+  {
+    if (V_TpsSecuMoteur > 29)
+    {
       V_TpsSecuMoteur = 1;
-    } else {
+    }
+    else
+    {
       V_TpsSecuMoteur++;
     }
   }
-  if (ParaSecumoteuretat == 3) {
+  if (ParaSecumoteuretat == 3)
+  {
     Etatsecumoteur = !Etatsecumoteur;
   }
-  if (ParaProgHouv == 3) {
-    if (V_HeureOuv > 22) {
+  if (ParaProgHouv == 3)
+  {
+    if (V_HeureOuv > 22)
+    {
       V_HeureOuv = 0;
-    } else {
+    }
+    else
+    {
       V_HeureOuv++;
     }
   }
-  if (ParaProgHouv == 5) {
-    if (V_MinOuv > 58) {
+  if (ParaProgHouv == 5)
+  {
+    if (V_MinOuv > 58)
+    {
       V_MinOuv = 0;
-    } else {
+    }
+    else
+    {
       V_MinOuv++;
     }
   }
-  if (ParaProgHferm == 3) {
-    if (V_HeureFerm > 22) {
+  if (ParaProgHferm == 3)
+  {
+    if (V_HeureFerm > 22)
+    {
       V_HeureFerm = 0;
-    } else {
+    }
+    else
+    {
       V_HeureFerm++;
     }
   }
-  if (ParaProgHferm == 5) {
-    if (V_MinFerm > 58) {
+  if (ParaProgHferm == 5)
+  {
+    if (V_MinFerm > 58)
+    {
       V_MinFerm = 0;
-    } else {
+    }
+    else
+    {
       V_MinFerm++;
     }
   }
-  if (ParaLDRouv == 3) {
-    if (V_LDRouv > 998) {
+  if (ParaLDRouv == 3)
+  {
+    if (V_LDRouv > 998)
+    {
       V_LDRouv = 0;
-    } else {
+    }
+    else
+    {
       V_LDRouv++;
     }
   }
-  if (ParaLDRferm == 3) {
-    if (V_LDRferm > 998) {
+  if (ParaLDRferm == 3)
+  {
+    if (V_LDRferm > 998)
+    {
       V_LDRferm = 0;
-    } else {
+    }
+    else
+    {
       V_LDRferm++;
     }
   }
-  if (ParaLDRhysteresis == 3) {
-    if (V_Hysteresis > 98) {
+  if (ParaLDRhysteresis == 3)
+  {
+    if (V_Hysteresis > 98)
+    {
       V_Hysteresis = 0;
-    } else {
+    }
+    else
+    {
       V_Hysteresis++;
     }
   }
-  if (SystReglheure == 3) {
-    if (V_Tsystheure > 22) {
+  if (SystReglheure == 3)
+  {
+    if (V_Tsystheure > 22)
+    {
       V_Tsystheure = 0;
-    } else {
+    }
+    else
+    {
       V_Tsystheure++;
     }
   }
-  if (SystReglheure == 5) {
-    if (V_Tsystminute > 58) {
+  if (SystReglheure == 5)
+  {
+    if (V_Tsystminute > 58)
+    {
       V_Tsystminute = 0;
-    } else {
+    }
+    else
+    {
       V_Tsystminute++;
     }
   }
-  if (SystReglheure == 7) {
-    if (V_Tsystseconde > 58) {
+  if (SystReglheure == 7)
+  {
+    if (V_Tsystseconde > 58)
+    {
       V_Tsystseconde = 0;
-    } else {
+    }
+    else
+    {
       V_Tsystseconde++;
+    }
+  }
+  if (MenuParaProgPlage1 > 0)
+  {
+    if (MenuParaProgPlage1 == 3)
+    {
+      MenuParaProgPlage1 = 5;
+    }
+    else
+    {
+      MenuParaProgPlage1--;
+    }
+  }
+  if (MenuParaProgPlage2 > 0)
+  {
+    if (MenuParaProgPlage2 == 3)
+    {
+      MenuParaProgPlage2 = 5;
+    }
+    else
+    {
+      MenuParaProgPlage2--;
     }
   }
 }
 
-//Gestion Navigation Bouton HAUT rapide ////////////
-void NavBthautrapide() {
-  if ((timerarduino - previousTimer6) > Timer6ON) {
-    if (ParaLDRouv == 3) {
-      if (V_LDRouv > 988) {
+// Gestion Navigation Bouton HAUT rapide ////////////
+void NavBthautrapide()
+{
+  if ((timerarduino - previousTimer6) > Timer6ON)
+  {
+    if (ParaLDRouv == 3)
+    {
+      if (V_LDRouv > 988)
+      {
         V_LDRouv = 0;
-      } else {
+      }
+      else
+      {
         V_LDRouv = V_LDRouv + 10;
       }
     }
-    if (ParaLDRferm == 3) {
-      if (V_LDRferm > 988) {
+    if (ParaLDRferm == 3)
+    {
+      if (V_LDRferm > 988)
+      {
         V_LDRferm = 0;
-      } else {
+      }
+      else
+      {
         V_LDRferm = V_LDRferm + 10;
       }
     }
-    if (ParaLDRhysteresis == 3) {
-      if (V_Hysteresis > 988) {
+    if (ParaLDRhysteresis == 3)
+    {
+      if (V_Hysteresis > 988)
+      {
         V_Hysteresis = 0;
-      } else {
+      }
+      else
+      {
         V_Hysteresis = V_Hysteresis + 10;
       }
     }
-    if (SystVeilleTpsactiv == 3) {
-      if (V_TpsAvveille > 169) {
+    if (SystVeilleTpsactiv == 3)
+    {
+      if (V_TpsAvveille > 169)
+      {
         V_TpsAvveille = 3;
-      } else {
+      }
+      else
+      {
         V_TpsAvveille = V_TpsAvveille + 10;
       }
     }
