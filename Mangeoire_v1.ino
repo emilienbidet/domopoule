@@ -56,6 +56,8 @@ byte MenuPara;           // Menu parametres
 byte MenuParaProg;       // Menu parametres programmateur
 byte ParaProgHouv;       // Menu parametrage Progr Heure ouverture
 byte ParaProgHferm;      // Menu parametrage Progr Heure fermeture
+byte ParaProgHouv2;      // Menu parametrage Progr Heure ouverture 2
+byte ParaProgHferm2;     // Menu parametrage Progr Heure fermeture 2
 byte MenuParaLDR;        // Menu parametres LDR
 byte ParaLDRouv;         // Menu parametrage LDR ouverture
 byte ParaLDRferm;        // Menu parametrage LDR fermeture
