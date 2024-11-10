@@ -186,6 +186,50 @@ void NavBthaut()
       V_MinFerm++;
     }
   }
+  if (ParaProgHouv2 == 3)
+{
+    if (V_HeureOuv2 > 22)
+    {
+        V_HeureOuv2 = 0;
+    }
+    else
+    {
+        V_HeureOuv2++;
+    }
+}
+if (ParaProgHouv2 == 5)
+{
+    if (V_MinOuv2 > 58)
+    {
+        V_MinOuv2 = 0;
+    }
+    else
+    {
+        V_MinOuv2++;
+    }
+}
+if (ParaProgHferm2 == 3)
+{
+    if (V_HeureFerm2 > 22)
+    {
+        V_HeureFerm2 = 0;
+    }
+    else
+    {
+        V_HeureFerm2++;
+    }
+}
+if (ParaProgHferm2 == 5)
+{
+    if (V_MinFerm2 > 58)
+    {
+        V_MinFerm2 = 0;
+    }
+    else
+    {
+        V_MinFerm2++;
+    }
+}
   if (ParaLDRouv == 3)
   {
     if (V_LDRouv > 998)
